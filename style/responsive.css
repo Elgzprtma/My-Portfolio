@@ -47,6 +47,8 @@
         transform: rotate(45deg) translate(-5px, -7px);
     }
 
+    
+
     nav {
         position: fixed;
         width: 50%;
@@ -59,6 +61,7 @@
         z-index: 9;
         transform: translateX(100%);
         transition: 0.3s ease-in-out;
+        
     }
 
     nav ul {
@@ -88,6 +91,7 @@
 
     #hero {grid-template-columns: 1fr;
     height: fit-content;
+    margin-top: 90px;
     }
 
     .hero-right {

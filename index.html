@@ -6,6 +6,9 @@
     <title>Andika Surya</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 
@@ -14,7 +17,8 @@
         <div class="nav-container">
             <div class="nav">
                 <div class="logo">
-                    <a href="">ASEP</a>
+                    <a href="#hero">A<span style=" color: #B0EBD7;
+                        ">S</span></a>
                 </div>
             <nav>
                 <ul>
@@ -39,9 +43,9 @@
     <div class="main-container">
     <section id="hero">
         <div class="hero-left">
-            <h3 class="pre-title">My name is</h3>
+            <h3 class="pre-title">Hello, nama saya</h3>
             <h1 class="hero-name">Andika Surya <span>Elang Pratama</span></h1>
-            <p>Hai, saya seorang siswa dari SMK Wikrama Bogor, yang mengambil jurusan Pengembangan Perangkat Lunak & Gim. Saya ingin menjadi Front-End Developer, walaupun sebenarnya saya ingin bisa menjadi Full-Stack Developer.</p>
+            <p>Hai, saya seorang siswa dari SMK Wikrama Bogor, yang mengambil jurusan Pengembangan Perangkat Lunak & Gim. Saya berfokus pada Web Developer.</p>
         </div>
         <div class="hero-right">
             <img src="image/image.png" alt="">
@@ -52,8 +56,8 @@
 
     <section id="services">
         <div class="services main-container">
-            <h3 class="pre-title">Services</h3>
-            <h1 class="section-title services-title">Specialized In</h1>
+            <h3 class="pre-title">Keahlian</h3>
+            <h1 class="section-title services-title">Keahlian Saya</h1>
 
             <div class="grid-3">
                 <!-- service 1 -->
@@ -85,8 +89,8 @@
 
     <section id="portfolios">
         <div class="portfolios main-container">
-            <h3 class="pre-title">My Works</h3>
-            <h1 class="section-title">Featured Portfolios</h1>
+            <h3 class="pre-title">Portofolio Saya</h3>
+            <h1 class="section-title">Projek</h1>
 
             <div class="grid-3">
                 <!--  port 1-->
@@ -161,6 +165,32 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="sertifikats">
+        <div class="sertifikat main-container">
+            <h3 class="pre-title">Sertifikat</h3>
+            <h1 class="section-title">Sertifikat Saya</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="image/Screenshot 2023-12-14 112005.png" alt=""></div>
+                  <div class="swiper-slide"><img src="image/Screenshot 2023-12-14 112036.png" alt=""></div>
+                  <div class="swiper-slide"><img src="image/Screenshot 2023-12-27 144932.png" alt=""></div>
+                  <!-- <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div> -->
+                </div>
+                <div class="swiper-button-next"></div> 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+        </div>
+
+        
     </section>
 
 
@@ -282,4 +312,23 @@
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>
